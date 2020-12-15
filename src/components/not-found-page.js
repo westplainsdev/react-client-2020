@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 const NotFoundPage = () => (
   <div className="error-container">
-    <h1><i className="fa fa-exclamation-triangle"></i> Page not found</h1>
+    <h1><i className="fa fa-exclamation-triangle text-danger"></i> Page not found</h1>
     <p className="lead">The page you're looking for doesn't exist. <Link to="/">Try from here</Link></p>
   </div>
 )
