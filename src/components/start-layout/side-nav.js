@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, NavLink } from "react-router-dom"
+import metadata from '../../metadata.json';
 
 const SideNav = () => {
     return (
@@ -23,8 +24,8 @@ const SideNav = () => {
                             <i className="fa fa-exclamation-triangle" aria-hidden="true"></i> Bad Link Page
                         </NavLink>
                     </li>
-                    <li className="nav-item">
-                        <span className="nav-text ml-3">Build v1.0.0</span>
+                    <li className="pl-3 mt-5">
+                        <span className="text-muted"> {`Build: v${metadata.buildMajor}.${metadata.buildMinor}.${metadata.buildRevision} ${metadata.buildTag}`}</span>
                     </li>
                 </ul>
             </div>
