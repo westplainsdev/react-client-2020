@@ -2,12 +2,6 @@ body {
   font-size: .875rem;
 }
 
-.feather {
-  width: 16px;
-  height: 16px;
-  vertical-align: text-bottom;
-}
-
 /*
  * Sidebar
  */
@@ -68,11 +62,13 @@ body {
 
 [role="main"] {
   padding-top: 133px; /* Space for fixed navbar */
+  padding-bottom: 133px;
 }
 
 @media (min-width: 768px) {
   [role="main"] {
     padding-top: 48px; /* Space for fixed navbar */
+    padding-bottom: 48px;
   }
 }
 
@@ -111,4 +107,9 @@ body {
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+footer {
+  padding-top: 5px;
+  line-height: .5em;
 }
