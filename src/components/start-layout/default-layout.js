@@ -1,6 +1,7 @@
 import React from "react"
 import Nav from "./nav"
 import SideNav from "./side-nav";
+import Footer from "./footer";
 
 const DefaultLayout = ({children}) => (
     <>
@@ -15,6 +16,7 @@ const DefaultLayout = ({children}) => (
                 </main>
             </div>
         </div>
+        <Footer/>
     </>
 )
 

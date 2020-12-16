@@ -6,18 +6,24 @@ const IndexPage = () => {
   let match = useRouteMatch() //can use from anywhere
   return (
     <DefaultLayout>
-      <h1><i className="fa fa-home" aria-hidden="true"></i> Home</h1>
-      <p>
-        We have access to the current path from any component using <code>useRouteMatch()</code>: {match.url}
-      </p>
-      <p>
-        <Link to="/about">Link to about test</Link>
-      </p>
-        <p> 789789798978 79879879897 798798798 9879798987 987987987 97987987987 987987987 979797 9798987987 978987987 979987 97987 978987979798 9797 97987 97987
-            789789798978 79879879897 798798798 9879798987 987987987 97987987987 987987987 979797 9798987987 978987987 979987 97987 978987979798 9797 97987 97987
-            789789798978 79879879897 798798798 9879798987 987987987 97987987987 987987987 979797 9798987987 978987987 979987 97987 978987979798 9797 97987 97987
-            789789798978 79879879897 798798798 9879798987 987987987 97987987987 987987987 979797 9798987987 978987987 979987 97987 978987979798 9797 97987 97987
-            789789798978 79879879897 798798798 9879798987 987987987 97987987987 987987987 979797 9798987987 978987987 979987 97987 978987979798 9797 97987 97987
+        <h1><i className="fa fa-home" aria-hidden="true"></i> Home</h1>
+        <p>
+            We have access to the current path from any component using <code>useRouteMatch()</code>: {match.url}
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia corrupti illum accusamus maiores veritatis
+            cumque laboriosam incidunt ipsam voluptate cupiditate quo excepturi quos aspernatur dicta amet, minus
+            repudiandae dolorum assumenda?
+        </p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nam facilis, recusandae ipsa cum
+            fugiat quod alias esse, corporis nemo voluptatum autem, vel magni! Iure, fuga. Exercitationem nobis sapiente
+            sequi.
+        </p>
+        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae iure ducimus ipsa, repellat vero nulla
+            libero debitis quo sit facilis, cumque maxime dolore ad laudantium nostrum praesentium soluta explicabo cum!
+        </p>
+        <p>
+            <Link to="/about">Link to about page</Link>
         </p>
     </DefaultLayout>
   )
