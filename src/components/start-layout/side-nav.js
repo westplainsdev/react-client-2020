@@ -20,12 +20,9 @@ const SideNav = () => {
                             aria-hidden="true"></i> Data Example</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink to="/badPage" exact={true} className="nav-link">
-                            <i className="fa fa-exclamation-triangle" aria-hidden="true"></i> Bad Link Page
+                        <NavLink to="/404-example" exact={true} className="nav-link">
+                            <i className="fa fa-exclamation-triangle" aria-hidden="true"></i> 404 Example
                         </NavLink>
-                    </li>
-                    <li className="pl-3 mt-5">
-                        <span className="text-muted"> {`Build: v${metadata.buildMajor}.${metadata.buildMinor}.${metadata.buildRevision} ${metadata.buildTag}`}</span>
                     </li>
                 </ul>
             </div>
