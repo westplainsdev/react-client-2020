@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link, NavLink } from "react-router-dom"
-import metadata from '../../metadata.json';
+import { NavLink } from "react-router-dom"
+
 
 const SideNav = () => {
     return (

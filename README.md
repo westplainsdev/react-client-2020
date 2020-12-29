@@ -1,3 +1,10 @@
+## React Dashboard Application
+This is a simple React v16.x application which has both a sidebar and top navigation
+along with a persistent footer. Large or long pages will scroll 
+while both navigation bars will stay in place. Hooks have been utilized 
+throughout the components along with a simplified `fetch` system for data
+access. 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -37,32 +44,32 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+[comment]: <> (## Learn More)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+[comment]: <> (You can learn more in the [Create React App documentation]&#40;https://facebook.github.io/create-react-app/docs/getting-started&#41;.)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+[comment]: <> (To learn React, check out the [React documentation]&#40;https://reactjs.org/&#41;.)
 
-### Code Splitting
+[comment]: <> (### Code Splitting)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+[comment]: <> (This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+[comment]: <> (### Analyzing the Bundle Size)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+[comment]: <> (This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+[comment]: <> (### Making a Progressive Web App)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+[comment]: <> (This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+[comment]: <> (### Advanced Configuration)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+[comment]: <> (This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+[comment]: <> (### Deployment)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+[comment]: <> (This section has moved here: https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+[comment]: <> (### `npm run build` fails to minify)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+[comment]: <> (This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
