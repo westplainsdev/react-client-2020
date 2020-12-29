@@ -1,5 +1,5 @@
 import React from "react"
-import {Link, NavLink} from "react-router-dom"
+import { Link } from "react-router-dom"
 
  const HeaderNav = () => (
     <nav className="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">

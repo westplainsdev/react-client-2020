@@ -1,6 +1,6 @@
 import React from "react"
 import {Link} from "react-router-dom"
-import DefaultLayout from "./default-layout"
+import DefaultLayout from "../start-layout/default-layout"
 
 const AboutPage = () => (
   <DefaultLayout>
