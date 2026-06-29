@@ -13,7 +13,9 @@ Run these from the project root. All should pass before considering work done:
 - `npm test` — Vitest run (jsdom, `src/test/setup.ts` loads jest-dom matchers)
 - `npm run build` — increments `src/metadata.json` build number, then `vite build` -> `dist/`
 
-Quick check all four: `npm run typecheck && npm run lint && npm test && npm run build`
+When verifying a build without intending to release, use `npx vite build` directly instead of `npm run build` to avoid incrementing the build number. The build number is user-facing in the footer and referenced in JIRA tickets, so only bump it on actual release builds.
+
+Quick check all four: `npm run typecheck && npm run lint && npm test && npx vite build`
 
 ## Dev server
 
