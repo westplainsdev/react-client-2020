@@ -4,12 +4,11 @@
   "private": true,
   "dependencies": {
     "@types/prop-types": "^15.7.15",
-    "history": "^4.10.1",
     "lodash": "^4.17.21",
     "prop-types": "^15.8.1",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
-    "react-router-dom": "^5.2.1"
+    "react-router-dom": "^6.30.4"
   },
   "scripts": {
     "start": "vite",

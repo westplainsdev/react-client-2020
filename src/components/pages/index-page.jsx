@@ -1,14 +1,14 @@
 import React from "react"
-import {Link, useRouteMatch} from "react-router-dom"
+import {Link, useLocation} from "react-router-dom"
 import DefaultLayout from "../start-layout/default-layout"
 
 const IndexPage = () => {
-  let match = useRouteMatch() //can use from anywhere
+  let location = useLocation() //can use from anywhere
   return (
     <DefaultLayout>
         <h1><i className="fa fa-home" aria-hidden="true"></i> Home</h1>
         <p>
-            We have access to the current path from any component using <code>useRouteMatch()</code>: {match.url}
+            We have access to the current path from any component using <code>useLocation()</code>: {location.pathname}
         </p>
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia corrupti illum accusamus maiores veritatis

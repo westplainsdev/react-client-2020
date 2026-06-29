@@ -8,19 +8,19 @@ const SideNav = () => {
             <div className="sidebar-sticky">
                 <ul className="nav flex-column">
                     <li className="nav-item">
-                        <NavLink to="/" exact={true} className="nav-link"><i className="fa fa-home"
+                        <NavLink to="/" end className="nav-link"><i className="fa fa-home"
                             aria-hidden="true"></i> Home</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink to="/about" exact={true} className="nav-link"><i className="fa fa-info-circle"
+                        <NavLink to="/about" end className="nav-link"><i className="fa fa-info-circle"
                             aria-hidden="true"></i> About</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink to="/data" exact={true} className="nav-link"><i className="fa fa-table"
+                        <NavLink to="/data" end className="nav-link"><i className="fa fa-table"
                             aria-hidden="true"></i> Data Example</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink to="/404-example" exact={true} className="nav-link">
+                        <NavLink to="/404-example" end className="nav-link">
                             <i className="fa fa-exclamation-triangle" aria-hidden="true"></i> 404 Example
                         </NavLink>
                     </li>
