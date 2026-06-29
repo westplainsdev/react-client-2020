@@ -28,7 +28,7 @@ Quick check all four: `npm run typecheck && npm run lint && npm test && npx vite
 - `src/components/start-layout/` — `routes.tsx`, `default-layout.tsx`, `nav.tsx`, `side-nav.tsx`, `footer.tsx`.
 - `src/components/pages/` — `index-page.tsx`, `about-page.tsx`, `data-page.tsx`, `users-page.tsx`, `profile-page.tsx`, `settings-page.tsx`.
 - `src/components/simple-grid/grid.tsx` — static data grid.
-- `src/components/common/` — reusable form field components (`ValidatedForm`, `InputField`, `SelectField`, `OptionField`, `RadioField`, `Alert`); used by the Settings page.
+- `src/components/common/` — reusable form field components (`ValidatedForm`, `InputField`, `SelectField`, `OptionField`, `RadioField`); used by the Settings page.
 - `src/lib/fetch-json.ts` — typed fetch helper; used by the Users page to fetch from JSONPlaceholder.
 - `src/metadata.json` — build number, auto-incremented by `generate-buildno.js` on `npm run build`.
 - `vite.config.ts` — Vite + Vitest config (`base: "./"` for relative asset paths).

@@ -5,7 +5,6 @@ import InputField from "../common/input-field"
 import SelectField from "../common/select-field"
 import OptionField from "../common/option-field"
 import RadioField from "../common/radio-field"
-import Alert from "../common/alert"
 
 const SettingsPage = () => {
   const [displayName, setDisplayName] = useState("")
@@ -24,7 +23,6 @@ const SettingsPage = () => {
     <DefaultLayout>
       <h1><i className="fa fa-cog" aria-hidden="true"></i> Settings</h1>
 
-      <Alert message={savedMessage ? undefined : undefined} />
       {savedMessage && (
         <div className="alert alert-success">
           <i className="fa fa-check-circle"></i> {savedMessage}
