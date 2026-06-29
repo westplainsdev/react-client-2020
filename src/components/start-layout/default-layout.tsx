@@ -1,9 +1,13 @@
-import React from "react"
+import {type ReactNode} from "react"
 import Nav from "./nav"
 import SideNav from "./side-nav";
 import Footer from "./footer";
 
-const DefaultLayout = ({children}) => (
+interface DefaultLayoutProps {
+    children: ReactNode
+}
+
+const DefaultLayout = ({children}: DefaultLayoutProps) => (
     <>
         <header>
             <Nav/>

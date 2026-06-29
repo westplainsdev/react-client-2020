@@ -1,4 +1,3 @@
-import React from 'react';
 import metadata from '../../metadata.json';
 
 const Footer = () => {
@@ -10,7 +9,7 @@ const Footer = () => {
 
                     {`Command Center Build: v${metadata.buildMajor}.
                                              ${metadata.buildMinor}.
-                                             ${metadata.buildRevision} 
+                                             ${metadata.buildRevision}
                                              ${metadata.buildTag}`}
                 </span>
             </footer>

@@ -1,9 +1,13 @@
-import React, {useState, useEffect} from "react"
-import AppContext from "./app-context"
+import {useState, useEffect, type ReactNode} from "react"
+import appContext, {type AppContextState} from "./app-context"
 
-const AppProvider = ({children}) => {
-  const [user, setUser] = useState(null)
-  const [account, setAccount] = useState(null)
+interface AppProviderProps {
+  children: ReactNode
+}
+
+const AppProvider = ({children}: AppProviderProps) => {
+  const [user, setUser] = useState<AppContextState["user"]>(null)
+  const [account, setAccount] = useState<AppContextState["account"]>(null)
   const [authenticated, setAuthenticated] = useState(false)
   const [backgroundUpdateData, setBackgroundUpdateData] = useState(0)
   const [busy, setBusy] = useState(false)
@@ -23,7 +27,7 @@ const AppProvider = ({children}) => {
     }
   }, [])
   return (
-    <AppContext.Provider value={{
+    <appContext.Provider value={{
       context: {user, account, authenticated, backgroundUpdateData, busy}
       ,setBusy: (v) => {setBusy(v)}
       ,refresh: () => {
@@ -39,7 +43,7 @@ const AppProvider = ({children}) => {
       }
     }}>
       {children}
-    </AppContext.Provider>
+    </appContext.Provider>
   )
 }
 

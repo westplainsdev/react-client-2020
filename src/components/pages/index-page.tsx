@@ -1,4 +1,3 @@
-import React from "react"
 import {Link, useLocation} from "react-router-dom"
 import DefaultLayout from "../start-layout/default-layout"
 

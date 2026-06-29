@@ -1,5 +1,3 @@
-import React from 'react';
-
 const DataGrid = () => {
     return (
         <div className="table-responsive">
@@ -130,7 +128,8 @@ const DataGrid = () => {
             </table>
         </div>
 
-    )}
+    )
+}
 
 
 export default DataGrid;

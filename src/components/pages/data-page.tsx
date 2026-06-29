@@ -1,4 +1,3 @@
-import React from 'react';
 import DefaultLayout from "../start-layout/default-layout"
 import DataGrid from "../simple-grid/grid";
 

@@ -1,6 +1,8 @@
-import React from "react"
+interface AlertProps {
+  message?: string | null
+}
 
-const Alert = ({message}) => (
+const Alert = ({message}: AlertProps) => (
   message ? (<div className="alert alert-danger">{message}</div>) : null
 )
 
