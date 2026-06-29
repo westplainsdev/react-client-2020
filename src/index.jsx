@@ -4,6 +4,7 @@ import {BrowserRouter} from "react-router-dom"
 import Routes from "./components/start-layout/routes"
 import AppProvider from "./components/context/app-provider"
 
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 
 const target = document.querySelector('#root')

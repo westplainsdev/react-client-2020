@@ -11,7 +11,7 @@ const DefaultLayout = ({children}) => (
         <div className="container-fluid">
             <div className="row">
                 <SideNav/>
-                <main role="main" className="col-md-9 ml-sm-auto col-lg-10 px-4">
+                <main role="main" className="col-md-9 ms-sm-auto col-lg-10 px-4">
                     {children}
                 </main>
             </div>

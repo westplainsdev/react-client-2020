@@ -2,11 +2,11 @@ import React from "react"
 import PropTypes from "prop-types"
 
 const OptionField = ({checked, name, label, disabled, required, onChange}) => (
-  <div className="form-group row">
+  <div className="mb-3 row">
     <div className="offset-2 col-10">
-      <div className="custom-control custom-switch">
-        <input type="checkbox" name={name} className="custom-control-input" id={`input_${name}`} onChange={onChange} checked={checked}/>
-        {label ? (<label className="custom-control-label" htmlFor={`input_${name}`}>{label}</label>) : null}
+      <div className="form-check form-switch">
+        <input type="checkbox" name={name} className="form-check-input" id={`input_${name}`} onChange={onChange} checked={checked}/>
+        {label ? (<label className="form-check-label" htmlFor={`input_${name}`}>{label}</label>) : null}
       </div>
     </div>
   </div>

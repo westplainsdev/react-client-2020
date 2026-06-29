@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@types/prop-types": "^15.7.15",
+    "bootstrap": "^5.3.8",
     "lodash": "^4.17.21",
     "prop-types": "^15.8.1",
     "react": "^19.2.7",

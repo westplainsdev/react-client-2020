@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 
 const InputField = ({value, name, label, type, placeholder, required, onChange}) => (
-  <div className="form-group row">
+  <div className="mb-3 row">
     {label ? (<label htmlFor={`input_${name}`} className="col-sm-2 col-form-label">{label}</label>) : null}
     <div className="col-sm-10">
       <input type={type} name={name} id={`input_${name}`} className="form-control" placeholder={placeholder} maxLength="100" required={required} value={value} onChange={onChange} />

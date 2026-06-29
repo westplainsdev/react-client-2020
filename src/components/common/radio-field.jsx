@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import RadioOption from "./radio-option"
 
 const RadioField = ({value, name, label, disabled, required, onChange, options}) => (
-  <fieldset className="form-group">
+  <fieldset className="mb-3">
     <div className="row">
       <legend className="col-form-label col-sm-2 pt-0">Radios</legend>
       <div className="col-sm-10">

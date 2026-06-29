@@ -5,9 +5,9 @@ const CurrentUserNav = () => (
   <AppContext.Consumer>
     {({context, refresh}) => (
       context.user ? (
-        <span className="nav-text mr-3">Hi {context?.user?.username}!</span>
+        <span className="nav-text me-3">Hi {context?.user?.username}!</span>
       ) : (
-        <span className="nav-text mr-3">
+        <span className="nav-text me-3">
           {context.busy ? (
             <i className="fa fa-spin fa-sync" />
           ) : (

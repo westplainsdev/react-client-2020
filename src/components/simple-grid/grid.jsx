@@ -4,7 +4,7 @@ const DataGrid = () => {
     return (
         <div className="table-responsive">
             <table className="table table-striped table-sm table-hover">
-                <thead className="thead-dark">
+                <thead className="table-dark">
                 <tr>
                     <th>#</th>
                     <th>Header</th>
