@@ -19,6 +19,10 @@ const SideNav = () => {
                             aria-hidden="true"></i> Data Example</NavLink>
                     </li>
                     <li className="nav-item">
+                        <NavLink to="/users" end className="nav-link"><i className="fa fa-users"
+                            aria-hidden="true"></i> Users</NavLink>
+                    </li>
+                    <li className="nav-item">
                         <NavLink to="/404-example" end className="nav-link">
                             <i className="fa fa-exclamation-triangle" aria-hidden="true"></i> 404 Example
                         </NavLink>

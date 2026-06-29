@@ -32,6 +32,25 @@ describe("App", () => {
     ).toBeInTheDocument();
   });
 
+  it("renders the users page heading at /users", () => {
+    renderAppAt("/users");
+    expect(screen.getByRole("heading", { name: "Users" })).toBeInTheDocument();
+  });
+
+  it("renders the profile page heading at /profile", () => {
+    renderAppAt("/profile");
+    expect(
+      screen.getByRole("heading", { name: "Profile" })
+    ).toBeInTheDocument();
+  });
+
+  it("renders the settings page heading at /settings", () => {
+    renderAppAt("/settings");
+    expect(
+      screen.getByRole("heading", { name: "Settings" })
+    ).toBeInTheDocument();
+  });
+
   it("renders the not-found page for an unknown route", () => {
     renderAppAt("/does-not-exist");
     expect(screen.getByText(/Page not found/i)).toBeInTheDocument();

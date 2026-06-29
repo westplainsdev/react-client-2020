@@ -20,6 +20,7 @@ export interface AppContextValue {
   context: AppContextState
   setBusy: (v: boolean) => void
   refresh: () => void
+  signOut: () => void
 }
 
 const appContext = createContext<AppContextValue | undefined>(undefined)

@@ -24,15 +24,16 @@ Quick check all four: `npm run typecheck && npm run lint && npm test && npm run 
 - `src/index.tsx` — entry; mounts `AppProvider` > `BrowserRouter` > `AppRoutes` in `StrictMode`.
 - `src/components/context/` — `AppContext` + `AppProvider` + `useAppContext` hook + `CurrentUserNav`.
 - `src/components/start-layout/` — `routes.tsx`, `default-layout.tsx`, `nav.tsx`, `side-nav.tsx`, `footer.tsx`.
-- `src/components/pages/` — `index-page.tsx`, `about-page.tsx`, `data-page.tsx`.
+- `src/components/pages/` — `index-page.tsx`, `about-page.tsx`, `data-page.tsx`, `users-page.tsx`, `profile-page.tsx`, `settings-page.tsx`.
 - `src/components/simple-grid/grid.tsx` — static data grid.
-- `src/components/common/` — form field components (currently orphaned/unused).
-- `src/lib/fetch-json.ts` — typed fetch helper (currently orphaned/unused).
+- `src/components/common/` — reusable form field components (`ValidatedForm`, `InputField`, `SelectField`, `OptionField`, `RadioField`, `Alert`); used by the Settings page.
+- `src/lib/fetch-json.ts` — typed fetch helper; used by the Users page to fetch from JSONPlaceholder.
 - `src/metadata.json` — build number, auto-incremented by `generate-buildno.js` on `npm run build`.
 - `vite.config.ts` — Vite + Vitest config (`base: "./"` for relative asset paths).
 
 ## Notes
 
 - Font Awesome 4 is still loaded via CDN `<link>` in `index.html`; not yet migrated.
-- `src/components/common/*` and `src/lib/fetch-json.ts` are not imported anywhere (dead code kept for reference).
+- The Users page (`/users`) fetches live data from `https://jsonplaceholder.typicode.com/users` — requires network access.
+- The top nav Sign out button clears auth state in AppContext; it's disabled when not authenticated.
 - `"type": "module"` is set in package.json; `generate-buildno.js` is ESM.

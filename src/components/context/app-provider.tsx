@@ -41,6 +41,12 @@ const AppProvider = ({children}: AppProviderProps) => {
           setAuthenticated(true)
         }, 1000)
       }
+      ,signOut: () => {
+        console.log("AppContext.Provider: sign out")
+        setUser(null)
+        setAccount(null)
+        setAuthenticated(false)
+      }
     }}>
       {children}
     </appContext.Provider>
