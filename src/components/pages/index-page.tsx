@@ -2,7 +2,7 @@ import {Link, useLocation} from "react-router-dom"
 import DefaultLayout from "../start-layout/default-layout"
 
 const IndexPage = () => {
-  let location = useLocation() //can use from anywhere
+  const location = useLocation() //can use from anywhere
   return (
     <DefaultLayout>
         <h1><i className="fa fa-home" aria-hidden="true"></i> Home</h1>

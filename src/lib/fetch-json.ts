@@ -17,9 +17,9 @@ export interface FetchJsonResult<T = unknown> {
 }
 
 export async function fetchJson<T = unknown>(url: string, options: FetchJsonOptions = {}): Promise<FetchJsonResult<T>> {
-  let result: FetchJsonResult<T> = {}
+  const result: FetchJsonResult<T> = {}
   try {
-    let args = _defaults(options, {
+    const args = _defaults(options, {
       method: "GET"
       ,headers: {
         "Content-type": "application/json"
@@ -28,7 +28,7 @@ export async function fetchJson<T = unknown>(url: string, options: FetchJsonOpti
     if (typeof options.json !== "undefined")
       args.body = JSON.stringify(options.json)
 
-    let response = await fetch(url, args as RequestInit)
+    const response = await fetch(url, args as RequestInit)
 
     result.response = response
     result.status = response.status

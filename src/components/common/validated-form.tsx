@@ -13,7 +13,7 @@ const ValidatedForm = ({children, onValidSubmit}: ValidatedFormProps) => {
     setClassName("needs-validation")
     event.preventDefault()
     event.stopPropagation()
-    let form = formRef.current
+    const form = formRef.current
     if (form && form.checkValidity() === true) {
       onValidSubmit()
     }

@@ -5,7 +5,7 @@
  * **/
 
 
-const fs = require('fs');
+import fs from 'fs';
 console.log('Incrementing build number...');
 fs.readFile('src/metadata.json',function(err,content) {
     if (err) throw err;

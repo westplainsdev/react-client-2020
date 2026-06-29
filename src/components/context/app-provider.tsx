@@ -15,7 +15,7 @@ const AppProvider = ({children}: AppProviderProps) => {
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      let updated = Math.round(Math.random() * 100)
+      const updated = Math.round(Math.random() * 100)
       setBackgroundUpdateData(updated)
       console.log(`AppContext.Provider: interval, data changed to: ${updated}`)
     }, 5000)
